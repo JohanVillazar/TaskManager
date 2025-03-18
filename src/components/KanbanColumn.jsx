@@ -1,6 +1,6 @@
 import { useDroppable } from "@dnd-kit/core";
 import TaskCard from "./TaskCard";
-import "../styles/kanbanColumn.css";
+import "../styles/KanbanColumn.css";
 
 function KanbanColumn({ status, tasks, onEditTask, onDeleteTask }) {
   const { setNodeRef } = useDroppable({ id: status });
