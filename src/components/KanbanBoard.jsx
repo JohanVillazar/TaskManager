@@ -4,7 +4,7 @@ import { SortableContext, verticalListSortingStrategy } from "@dnd-kit/sortable"
 import KanbanColumn from "./KanbanColumn";
 import EditTaskModal from "./EditTaskModal";
 import { useTasks } from "../context/TaskContext";
-import "../styles/kanganboard.css";
+import "../styles/KanbanBoard.css";
 
 
 
