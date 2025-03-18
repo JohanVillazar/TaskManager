@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { FaTasks, FaCheckCircle, FaUser, FaUserShield } from "react-icons/fa";
 import AdminCharts from './Admin/AdminCharts';
-import "../styles/adminDashboard.css";
+import "../styles/AdminDashboard.css";
 import CreateTasksModal from "./CreateTasksModal"
 import { toast } from "react-toastify";
 import CreateUserModal from "./Admin/CreateUserModal";
