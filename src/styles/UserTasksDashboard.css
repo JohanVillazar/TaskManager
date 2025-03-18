@@ -1,0 +1,142 @@
+.user-tasks-dashboard {
+    padding: 2rem;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+  }
+  .user-dashboard {
+    margin-left: 50px;
+    padding: 2rem;
+    background-color: #f4f6fa;
+    min-height: 100vh;
+  }
+  
+  .user-tasks-dashboard h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2c3e50;
+  }
+  .filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .filters label {
+    font-weight: 500;
+    margin-right: 0.5rem;
+  }
+  
+  .filters select {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .task-cards {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease;
+    border-left: 6px solid #8091f5cb;
+  }
+  .task-cards-tasks-description{
+  font-size: medium;
+  color: #000000;
+
+  }
+  
+  .task-cards:hover {
+    transform: translateY(-3px);
+  }
+  
+  .task-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  
+  .task-meta {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .status {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: 10px;
+  }
+  
+  .status.pendiente {
+    color: #e67e22;
+  }
+  
+  .status.en-progreso {
+    color: #2980b9;
+  }
+  
+  .status.completada {
+    color: #27ae60;
+  }
+  
+  .priority {
+    font-weight: 600;
+  }
+  
+  .priority.Alta {
+    color: #e74c3c;
+  }
+  
+  .priority.Media {
+    color: #f1c40f;
+  }
+  
+  .priority.Baja {
+    color: #2ecc71;
+  }
+
+
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 8px;
+    color: #504c4c;
+    text-transform: capitalize;
+  }
+  
+  /* Estado */
+  .badge-pendiente {
+    background-color: #e67e22;
+  }
+  
+  .badge-en-progreso {
+    background-color: #3498db;
+  }
+  
+  .badge-completada {
+    background-color: #2ecc71;
+  }
+  
+  /* Prioridad */
+  .badge-Alta {
+    background-color: #e74c3c;
+  }
+  
+  .badge-Media {
+    background-color: #f39c12;
+  }
+  
+  .badge-Baja {
+    background-color: #27ae60;
+  }
+  
+  

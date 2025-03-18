@@ -1,0 +1,85 @@
+.admin-dashboard {
+  padding: 2rem;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.summary-group {
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 1rem;
+}
+
+.dashboard-card {
+  flex: 1 1 200px;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-charts-section {
+  margin-top: 3rem;
+}
+
+.charts-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.dashboard-actions-section {
+  margin-top: 4rem;
+}
+
+.actions-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.action-btn:hover {
+  background-color: #125aa1;
+}
+
+/* Colores personalizados por tipo */
+.dashboard-card.total { background-color: #5a6268; }
+.dashboard-card.pending { background-color: #dc3545; }
+.dashboard-card.inprogress { background-color: #6610f2; }
+.dashboard-card.completed { background-color: #198754; }
+.dashboard-card.users { background-color: #17a2b8; }
+.dashboard-card.admins { background-color: #6f42c1; }
+
+
+  @media (max-width: 768px) {
+    .dashboard-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
+  

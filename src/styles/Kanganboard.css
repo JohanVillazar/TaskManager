@@ -1,0 +1,42 @@
+/* kanban.css */
+
+.kanban-container {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; 
+    padding: 1rem;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+    
+  }
+  
+  
+  .kanban-column {
+    flex: 1;
+   
+    min-width: 350px; 
+    max-width: 50%;   
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 1440px) {
+    .kanban-column {
+      max-width: 37%; /* o 36% si preferís aún más anchas */
+    }
+  }
+ 
+  @media screen and (max-width: 1024px) {
+    .kanban-column {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  
+    .kanban-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  

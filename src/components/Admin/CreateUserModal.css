@@ -1,0 +1,67 @@
+/* Estilo para el fondo del modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Estilo para el contenido del modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+}
+
+
+
+
+
+.modal {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .create-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .create-user-form label {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .create-user-form input,
+  .create-user-form select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  

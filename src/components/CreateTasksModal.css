@@ -1,0 +1,59 @@
+.task-modal-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+  }
+  
+  .task-modal-container h2 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .task-modal-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-modal-form label {
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .task-modal-form input,
+  .task-modal-form textarea,
+  .task-modal-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .task-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .task-modal-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-modal-buttons button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .task-modal-buttons button[type="button"] {
+    background-color: #e0e0e0;
+  }
+  

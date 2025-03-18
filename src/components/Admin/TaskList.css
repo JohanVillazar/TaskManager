@@ -1,0 +1,89 @@
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-table th {
+  background-color: #1e293b;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.task-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.task-table tr:hover {
+  background-color: #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+.priority-alta {
+  background-color: #ef4444; /* rojo */
+  color: white;
+}
+
+.priority-media {
+  background-color: #facc15; /* amarillo */
+  color: #1e1e1e;
+}
+
+.priority-baja {
+  background-color: #4ade80; /* verde */
+  color: white;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+
+.status-badge.pendiente {
+  background-color: #f0ad4e; /* naranja suave */
+}
+
+.status-badge.enprogreso {
+  background-color: #5bc0de; /* azul claro */
+}
+
+.status-badge.completada {
+  background-color: #5cb85c; /* verde */
+}

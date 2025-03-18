@@ -1,0 +1,30 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    background-color: #8f8f8f4b;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 301px;
+    height: 100%; /* asegúrate que el contenedor se estire */
+  }
+  
+  .status-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .column-tasks-scroll {
+    flex: 1;
+    overflow-y: auto;
+    max-height: calc(100vh - 300px); /* ajusta este valor si tenés navbar, etc */
+    padding-right: 6px; /* espacio para que el scroll no tape nada */
+    scroll-behavior: smooth;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .column {
+      max-width: 60%; /* o 36% si preferís aún más anchas */
+    }
+  }
+  

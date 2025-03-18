@@ -1,0 +1,20 @@
+.tasks-by-user-table {
+    margin-top: 30px;
+  }
+  
+  .tasks-by-user-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tasks-by-user-table th,
+  .tasks-by-user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tasks-by-user-table th {
+    background-color: #f5f5f5;
+  }
+  
