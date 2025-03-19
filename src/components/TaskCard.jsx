@@ -55,7 +55,7 @@ function TaskCard({ task, onEdit, onDelete }) {
         try {
           const token = localStorage.getItem("token");
          
-          const response = await fetch(`http://localhost:3000/tasks/${taskId}`, {
+          const response = await fetch(`https://tasksapi-0jsn.onrender.com/tasks/${taskId}`, {
             method: "DELETE",
             headers: {
               Authorization: `Bearer ${token}`,
