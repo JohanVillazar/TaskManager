@@ -21,7 +21,7 @@ function KanbanBoard() {
     const fetchTasks = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("http://localhost:3000/api/tasks", {
+        const response = await fetch("https://tasksmanagerback.onrender.com/tasks", {
           headers: {
             Authorization: `Bearer ${token}`,
           }
@@ -72,7 +72,7 @@ function KanbanBoard() {
     try {
       const token = localStorage.getItem("token");
   
-      await fetch(`http://localhost:3000/tasks/${active.id}/status`, {
+      await fetch(`https://tasksmanagerback.onrender.com/tasks/${active.id}/status`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
