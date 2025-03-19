@@ -28,10 +28,10 @@ const AdminDashboard = () => {
   const fetchStats = async () => {
     try {
       const token = localStorage.getItem("token");
-      const tasksRes = await fetch("http://localhost:3000/admin/summary/tasks", {
+      const tasksRes = await fetch("https://tasksmanagerback.onrender.com/admin/summary/tasks", {
         headers: { Authorization: `Bearer ${token}` },
       });
-      const usersRes = await fetch("http://localhost:3000/admin/summary/users", {
+      const usersRes = await fetch("https://tasksmanagerback.onrender.com/admin/summary/users", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -48,7 +48,7 @@ const AdminDashboard = () => {
   
   const fetchTasks = async () => {
     try {
-      const response = await fetch("http://localhost:3000/admin/tasks", {
+      const response = await fetch("https://tasksmanagerback.onrender.com/admin/tasks", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
       });
       const data = await response.json();
@@ -80,7 +80,7 @@ const AdminDashboard = () => {
   const handleDelete = async (taskId) => {
     if (confirm("¿Estás seguro de eliminar esta tarea?")) {
       try {
-        await fetch(`http://localhost:3000/tasks/${taskId}`, {
+        await fetch(`https://tasksmanagerback.onrender.com/tasks/${taskId}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`

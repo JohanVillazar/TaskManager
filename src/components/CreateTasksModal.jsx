@@ -41,7 +41,7 @@ const CreateTaskModal = ({ isOpen, onRequestClose, onTaskCreated, onClose, isAdm
       const fetchUsers = async () => {
         try {
           const token = localStorage.getItem("token");
-          const response = await fetch("http://localhost:3000/api/users", {
+          const response = await fetch("https://tasksmanagerback.onrender.com/api/users", {
             headers: {
               Authorization: `Bearer ${token}`,
             },
