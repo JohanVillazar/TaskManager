@@ -15,7 +15,7 @@ function Home() {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch("http://localhost:3000/tasks", {
+        const response = await fetch("https://tasksapi-0jsn.onrender.com/tasks", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

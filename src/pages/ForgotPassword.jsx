@@ -10,7 +10,7 @@ function ForgotPassword() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/auth/forgot-password", {
+      const response = await fetch("https://tasksapi-0jsn.onrender.com/auth/forgot-password", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

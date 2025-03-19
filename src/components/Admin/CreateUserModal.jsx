@@ -20,7 +20,7 @@ const CreateUserModal = ({ isOpen, onRequestClose, onUserCreated }) => {
     const newUser = { name, email, phone, password, role };
 
     try {
-      const response = await fetch("http://localhost:3000/user/admin", {
+      const response = await fetch("https://tasksapi-0jsn.onrender.com/user/admin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

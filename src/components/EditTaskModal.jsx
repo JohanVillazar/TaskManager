@@ -37,7 +37,7 @@ function EditTaskModal({ isOpen, onRequestClose, task, onSave }) {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await fetch(`http://localhost:3000/tasks/${task.id}/note`, {
+      const response = await fetch(`https://tasksapi-0jsn.onrender.com/tasks/${task.id}/note`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

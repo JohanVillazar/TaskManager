@@ -59,7 +59,7 @@ const [confirmPassword, setConfirmPassword] = useState('');
 
 
     try {
-      const response = await fetch("http://localhost:3000/user/update-profile", {
+      const response = await fetch("https://tasksapi-0jsn.onrender.com/user/update-profile", {
         method: "PUT",
         headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -88,7 +88,7 @@ const [confirmPassword, setConfirmPassword] = useState('');
   <div className="user-profile-photo">
     
     <img
-      src={`http://localhost:3000/uploads/${user.photo}`}
+      src={`https://tasksapi-0jsn.onrender.com/uploads/${user.photo}`}
       alt="Foto de perfil"
       className="profile-image"
     />

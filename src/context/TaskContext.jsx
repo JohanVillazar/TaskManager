@@ -8,7 +8,7 @@ export const TaskProvider = ({ children }) => {
 
   const loadTasks = async () => {
     try {
-      const res = await fetch("http://localhost:3000/tasks");
+      const res = await fetch("https://tasksapi-0jsn.onrender.com/tasks");
       const data = await res.json();
       setTasks(data);
     } catch (err) {

@@ -11,7 +11,7 @@ const [filterPriority, setFilterPriority] = useState("");
     const fetchUserTasks = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await fetch('http://localhost:3000/tasks/my-tasks', {
+        const res = await fetch('https://tasksapi-0jsn.onrender.com/tasks/my-tasks', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
