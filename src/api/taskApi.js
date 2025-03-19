@@ -1,4 +1,4 @@
-const API_URL = "https://tasksmanagerback.onrender.com/tasks?all=true";
+const API_URL = "https://tasksapi-0jsn.onrender.com/tasks?all=true";
 
 export const fetchTasks = async () => {
     try {

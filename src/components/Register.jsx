@@ -20,7 +20,7 @@ const Register = () => {
 
     try {
       // Aquí deberías hacer el POST al backend incluyendo el rol
-      const response = await fetch("https://tasksmanagerback.onrender.com/register", {
+      const response = await fetch("https://tasksapi-0jsn.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
